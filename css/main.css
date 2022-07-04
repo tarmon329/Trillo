@@ -96,7 +96,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 31.25em) and (pointer: none) {
   .header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -178,7 +178,7 @@ body {
     gap: 3rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) and (pointer: none) {
   .detail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,7 +186,7 @@ body {
             flex-direction: column;
   }
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 31.25em) and (pointer: none) {
   .detail {
     padding: 1rem 0;
   }

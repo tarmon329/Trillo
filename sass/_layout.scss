@@ -32,7 +32,7 @@ $bp-smallest: 31.25em; //  500px
   align-items: center;
   // overflow: hidden;
 
-  @media only screen and(max-width: $bp-smallest) {
+  @media only screen and(max-width: $bp-smallest) and (pointer: none) {
     flex-wrap: wrap;
     height: 11rem;
     align-items: space-between;
@@ -83,11 +83,11 @@ $bp-smallest: 31.25em; //  500px
     gap: 3rem;
   }
 
-  @media only screen and(max-width: $bp-small) {
+  @media only screen and(max-width: $bp-small) and (pointer: none) {
     flex-direction: column;
   }
 
-  @media only screen and(max-width: $bp-smallest) {
+  @media only screen and(max-width: $bp-smallest) and (pointer: none) {
     padding: 1rem 0;
   }
 }
