@@ -96,7 +96,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -178,7 +178,7 @@ body {
     gap: 3rem;
   }
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .detail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,7 +186,7 @@ body {
             flex-direction: column;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .detail {
     padding: 1rem 0;
   }
@@ -249,7 +249,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .search {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -432,7 +432,7 @@ body {
   overflow-x: hidden;
   overflow: unset;
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .user-nav__user {
     padding: 0;
   }
@@ -516,7 +516,7 @@ body {
     margin-right: 1rem;
   }
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .user-nav__link-icon {
     margin-right: 0.75rem;
   }
@@ -609,7 +609,7 @@ body {
     padding: 2rem;
   }
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .side-nav__link:link, .side-nav__link:visited {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -624,7 +624,7 @@ body {
   margin-right: 2rem;
   fill: currentColor;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .side-nav__icon {
     display: none;
   }
@@ -655,7 +655,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .gallery {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -665,7 +665,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .gallery__item:not(:first-child) {
     width: 50%;
     -webkit-box-flex: 0;
@@ -720,7 +720,7 @@ body {
           align-items: center;
   border-bottom: var(--line);
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -738,13 +738,13 @@ body {
   letter-spacing: 1px;
   padding: 1.5rem 3rem;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .overview__heading {
     font-size: 1.8rem;
     padding: 1.25rem 2rem;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview__heading {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -757,7 +757,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview__stars {
     margin-right: 0;
   }
@@ -800,12 +800,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .overview__rating {
     padding: 0 1.5rem;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview__rating {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -823,13 +823,13 @@ body {
   font-weight: 300;
   margin-bottom: -3px;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .overview__rating-average {
     font-size: 1.8rem;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview__rating-average {
     line-height: 2;
   }
@@ -838,12 +838,12 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .overview__rating-count {
     font-size: 0.5rem;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .overview__rating-count {
     font-size: 1rem;
     line-height: 1;
@@ -1189,7 +1189,7 @@ body {
           box-shadow: var(--shadow-dark);
   z-index: 100000;
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .menu {
     width: 30rem;
   }
@@ -1253,7 +1253,7 @@ body {
     width: 35rem;
   }
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .notification-menu {
     left: -3.5rem;
     width: 25rem;
@@ -1288,13 +1288,13 @@ body {
     width: 35rem;
   }
 }
-@media only screen and (max-width: 37.5em) and (pointer: none) {
+@media only screen and (max-width: 37.5em), (pointer: none) {
   .message-menu {
     left: -13.5rem;
     width: 25rem;
   }
 }
-@media only screen and (max-width: 31.25em) and (pointer: none) {
+@media only screen and (max-width: 31.25em), (pointer: none) {
   .message-menu {
     left: -13.9rem;
     width: 100%;
