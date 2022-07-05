@@ -179,7 +179,7 @@
     overflow: unset;
 
     @media only screen and (max-width: $bp-smallest), (pointer: none) {
-      padding: 0;
+      padding: 0 1rem;
     }
 
     &::after {
@@ -196,7 +196,7 @@
       box-shadow: 0 0 1rem rgb(0 0 0 / 10%);
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-largest) {
       &::after {
         display: none;
       }
@@ -1031,12 +1031,12 @@
 
     @media only screen and(max-width: $bp-small), (pointer: none) {
       left: -13.5rem;
-      width: 25rem;
+      width: 30rem;
     }
 
     @media only screen and(max-width: $bp-smallest), (pointer: none) {
       left: -13.9rem;
-      width: 100%;
+      width: 28rem;
     }
 
     &__form {
@@ -1092,9 +1092,6 @@
     display: flex;
     align-items: center;
     font-size: inherit;
-
-    // &-photo {
-    // }
 
     &-box {
       position: relative;

@@ -3,7 +3,7 @@ let lastScrollTop;
 navbar = document.querySelector(".sidebar");
 window.addEventListener("scroll", function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (window.innerWidth > 900 || scrollTop < 135) {
+  if (window.innerWidth > 900 || scrollTop < 140) {
     navbar.style = "";
   } else if (scrollTop > lastScrollTop) {
     navbar.style.transform = "translateY(-100%)";

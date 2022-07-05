@@ -434,7 +434,7 @@ body {
 }
 @media only screen and (max-width: 31.25em), (pointer: none) {
   .user-nav__user {
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 .user-nav__user::after {
@@ -453,7 +453,7 @@ body {
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 78.12em) {
   .user-nav__user::after {
     display: none;
   }
@@ -1291,13 +1291,13 @@ body {
 @media only screen and (max-width: 37.5em), (pointer: none) {
   .message-menu {
     left: -13.5rem;
-    width: 25rem;
+    width: 30rem;
   }
 }
 @media only screen and (max-width: 31.25em), (pointer: none) {
   .message-menu {
     left: -13.9rem;
-    width: 100%;
+    width: 28rem;
   }
 }
 .message-menu__form {
