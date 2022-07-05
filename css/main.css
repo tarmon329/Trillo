@@ -1220,6 +1220,11 @@ body {
   overflow-y: auto;
   z-index: 999;
 }
+@media only screen and (max-width: 37.5em), (pointer: none) {
+  .u-menu__container {
+    max-height: 40rem;
+  }
+}
 
 .u-menu__box {
   padding: 1rem 0 1rem 1.5rem;
@@ -1256,7 +1261,13 @@ body {
 @media only screen and (max-width: 37.5em), (pointer: none) {
   .notification-menu {
     left: -3.5rem;
-    width: 25rem;
+    width: 29rem;
+  }
+}
+@media only screen and (max-width: 31.25em), (pointer: none) {
+  .notification-menu {
+    left: -5rem;
+    width: 29rem;
   }
 }
 .notification__box {
@@ -1291,13 +1302,12 @@ body {
 @media only screen and (max-width: 37.5em), (pointer: none) {
   .message-menu {
     left: -13.5rem;
-    width: 30rem;
+    width: 33rem;
   }
 }
 @media only screen and (max-width: 31.25em), (pointer: none) {
   .message-menu {
-    left: -13.9rem;
-    width: 28rem;
+    left: -15.5rem;
   }
 }
 .message-menu__form {

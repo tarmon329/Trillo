@@ -957,6 +957,10 @@
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 999;
+
+  @media only screen and (max-width: $bp-small), (pointer: none) {
+    max-height: 40rem;
+  }
 }
 .u-menu__box {
   padding: 1rem 0 1rem 1.5rem;
@@ -995,7 +999,12 @@
 
     @media only screen and(max-width: $bp-small), (pointer: none) {
       left: -3.5rem;
-      width: 25rem;
+      width: 29rem;
+    }
+
+    @media only screen and(max-width: $bp-smallest), (pointer: none) {
+      left: -5rem;
+      width: 29rem;
     }
   }
 
@@ -1031,12 +1040,12 @@
 
     @media only screen and(max-width: $bp-small), (pointer: none) {
       left: -13.5rem;
-      width: 30rem;
+      width: 33rem;
     }
 
     @media only screen and(max-width: $bp-smallest), (pointer: none) {
-      left: -13.9rem;
-      width: 28rem;
+      left: -15.5rem;
+      // width: 28rem;
     }
 
     &__form {
