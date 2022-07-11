@@ -70,39 +70,71 @@ const createNotifications = (notifications) => {
 
 // Messages
 class message {
-  constructor(name, img, text) {
+  constructor(name, img, text, id) {
     this.name = name.toUpperCase();
     this.img = img;
     this.text = text;
+    this.id = id;
   }
 }
+const uniqueId = () => {
+  const dateString = Date.now().toString(36);
+  const randomness = Math.random().toString(36).substr(2);
+  return dateString + randomness;
+};
+
 let messages = [
   new message(
     "Nick smith",
     "img/user-1.jpg",
-    "I've just confirmed your order at our hotel Panambi"
+    "I've just confirmed your order at our hotel Panambi",
+    uniqueId()
   ),
   new message(
     "MARY THOMAS",
     "img/user-2.jpg",
-    "Hey, you order for Ashok is confirmed!"
+    "Hey, you order for Ashok is confirmed!",
+    uniqueId(),
+    uniqueId()
   ),
   new message(
     "Nick Young",
     "img/user-3.jpg",
-    "I'm sorry to inform you that your reservation for Kastraki is declined."
+    "I'm sorry to inform you that your reservation for Kastraki is declined.",
+    uniqueId()
   ),
-  new message("Jason Bourne", "img/user-4.jpg", "You're welcome!"),
+  new message("Jason Bourne", "img/user-4.jpg", "You're welcome!", uniqueId()),
   new message(
     "Cris Cross",
     "img/user-5.jpg",
-    "Do you want to the passanger seat in the end?"
+    "Do you want to the passanger seat in the end?",
+    uniqueId()
   ),
-  new message("Jesse Morgan", "img/user-6.jpg", "Thanks! You too!"),
-  new message("Omri Levi", "img/user-5.jpg", " I'll get you your rented bike."),
-  new message("nick smith", "img/user-1.jpg", "We've recieved your order"),
-  new message("Mary Thomas", "img/user-2.jpg", "We've recieved your order"),
-  new message("Nick Young", "img/user-3.jpg", "We've recieved your order"),
+  new message("Jesse Morgan", "img/user-6.jpg", "Thanks! You too!", uniqueId()),
+  new message(
+    "Omri Levi",
+    "img/user-5.jpg",
+    " I'll get you your rented bike.",
+    uniqueId()
+  ),
+  new message(
+    "nick smith",
+    "img/user-1.jpg",
+    "We've recieved your order",
+    uniqueId()
+  ),
+  new message(
+    "Mary Thomas",
+    "img/user-2.jpg",
+    "We've recieved your order",
+    uniqueId()
+  ),
+  new message(
+    "Nick Young",
+    "img/user-3.jpg",
+    "We've recieved your order",
+    uniqueId()
+  ),
 ];
 let messagesCopy = JSON.parse(JSON.stringify(messages));
 
@@ -111,9 +143,9 @@ const container = document.querySelector(".message-menu__container");
 const mesNum = document.querySelector(".user-nav__notification--messages");
 
 const createMessages = (messages) => {
-  messages.map((message, id) => {
+  messages.map((message) => {
     const html = `
-    <div data-index="${id}" class="message-menu__friends u-menu__box">
+    <div data-id="${message.id}" class="message-menu__friends u-menu__box">
                   <figcaption class="message-menu__user">
                     <img
                       src="${message.img}"
@@ -138,8 +170,8 @@ const createMessages = (messages) => {
 
 // Delete Messages
 function deleteMessage(e) {
-  const index = +e.target.closest(".message-menu__friends").dataset.index;
-  messagesCopy = messagesCopy.filter((_, i) => i !== index);
+  const id = e.target.closest(".message-menu__friends").dataset.id;
+  messagesCopy = messagesCopy.filter((m) => m.id !== id);
   container.innerHTML = "";
   createMessages(messagesCopy);
   if (messagesCopy.length === 0) {
